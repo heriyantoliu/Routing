@@ -1,0 +1,27 @@
+<mvc:View	
+	controllerName="sap.ui.demo.nav.controller.SPK.SPKList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page id="SPKListPage" title="List SPK"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>			
+			<List
+				id="SPKList" 
+				headerText="List All SPK" 
+				items="{/HeaderSet}"
+				growing= "true"
+				growingScrollToLoad= "false">
+				<items>
+					<StandardListItem
+						title="{Spkid}"
+						iconDensityAware="false"
+						iconInset="false"
+						type="Navigation"
+						press="onListItemPressed"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
